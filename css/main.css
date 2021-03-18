@@ -112,7 +112,7 @@ textarea {
 
    h2 {
      font-family: 'Poppins', sans-serif;
-     font-size: 1.875em;
+     font-weight: 500;
    }
 
    h3,
@@ -127,6 +127,14 @@ textarea {
    p {
      font-size: .875em;
      line-height: 1.285;
+   }
+
+   img {
+    width: 100%;
+   }
+
+   figure {
+    margin: 0;
    }
 
    address {
@@ -157,12 +165,18 @@ textarea {
        flex-flow: row wrap;
        margin: 0;
      }
+     header figure {
+       width: 60%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-flow: row wrap;
+     }
      .header-divider {
        background: #3a3a3a;
        width: 100%;
        height: 1px;
        margin: 10px 0 20px 0;
-
      }
      header nav {
        font-size: 1.125em;
@@ -208,6 +222,10 @@ textarea {
      /* Hero Area */
 
      .hero-area {
+       background: url(../img/unplugged-retreat.jpg);
+       background-size: cover;
+       background-position: center;
+       min-height: 500px;
        display: flex;
        justify-content: center;
        flex-flow: row wrap;
@@ -217,7 +235,7 @@ textarea {
        font-size: 3.75em;
        font-family: 'Poppins', Helvetica, Arial, sans-serif;
        font-weight: 500;
-       line-height: 1;
+       line-height: 1.2;
      }
 
      /* Adise */
@@ -255,10 +273,14 @@ textarea {
      /* Features */
 
      .features {
+       background: url('../img/unplugged-retreat-features.jpg');
+       background-size: cover;
+       background-position: center;
        display: flex;
        justify-content: center;
        flex-flow: row wrap;
      }
+
      .features h2 {
        margin-bottom: 60px;
      }
@@ -271,8 +293,10 @@ textarea {
        justify-content: center;
        align-items: center;
        flex-flow: row wrap;
+       margin: 0;
      }
      .features p {
+       text-align: center;
        margin: 0;
      }
 
@@ -448,6 +472,9 @@ textarea {
         width: 100%;
         justify-content: space-between;
     }
+    header figure {
+      width: 30%;
+    }
     header nav {
         width: 20%;
     }
@@ -457,6 +484,17 @@ textarea {
     .header-divider {
         display: none;
     }
+    /* Hero Area */
+
+    .hero-area {
+      min-height: 600px;
+    }
+
+    .hero-area h1 {
+      font-size: 3em;
+      line-height: 1;
+      margin: 0;
+  }
     /* Aside */
     aside .content-wrapper {
         margin: 50px 0;
@@ -470,6 +508,9 @@ textarea {
       margin: 0;
     }
     /* Features */
+    .features h2 {
+      margin-bottom: 20px;
+    }
     .features article {
       display: flex;
       justify-content: center;
@@ -485,8 +526,16 @@ textarea {
       display: flex;
       justify-content: space-between;
     }
+    .reviews h2 {
+      width: 85%;
+    }
+    .reviews article figure,
     .reviews article div {
       width: 49%;
+    }
+    .reviews h3 {
+      width: 75%;
+      margin: 0;
     }
     /* Footer */
     footer .content-wrapper {
@@ -543,13 +592,29 @@ textarea {
 
    @media only screen and (min-width: 1200px) {
    /*Desktop styles here*/
+   header {
+     padding: 15px 0;
+   }
    .content-wrapper {
          max-width: 960px;
     }
+    h2 {
+      font-size: 2.25em;
+    }
 
+    h3,
+    h4 {
+        font-size: 1.875em;
+    }
+
+    p {
+        font-size: 1.125em;
+        line-height: 1.333;
+    }
      /* Hero */
     .hero-area h1 {
-        width: 60%;
+      font-size: 3.75em;
+      width: 80%;
     }
 
     /* Aside */
