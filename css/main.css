@@ -327,18 +327,6 @@ textarea {
     align-items: center;
     flex-flow: row wrap;
 }
-
-.contact-section {
-    background-color: #2a423a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-}
-
-.contact-content p {
-    margin: 0;
-}
 .map figure {
     width: 100%;
     height: 0;
@@ -353,6 +341,17 @@ textarea {
     position: absolute;
     top: 0;
     left: 0;
+}
+.contact-section {
+    background-color: #2a423a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.contact-content p {
+    margin: 0;
 }
 
 /* ====================================================
@@ -582,6 +581,9 @@ textarea {
      .mission-content p {
        width: 45%;
      }
+     .map figure {
+       padding-bottom: 45.5%;
+     }
      .contact-section .content-wrapper h2 {
        width: 80%;
      }
@@ -646,23 +648,35 @@ textarea {
     .features h2 {
         width: 90%
     }
-
     .features article {
         flex-basis: 33%;
     }
 
     /* Reviews */
+    .reviews h2 {
+      padding-bottom: 50px;
+    }
     .reviews article div {
-        width: 42%;
+      width: 42%;
+    }
+    footer h4 {
+      font-size: 1.875em;
     }
 
 /* ==========================================================================
    About Page
    ========================================================================== */
-    .mission h2,
-    .contact-section .content-wrapper h2 {
-        width:
-    }
+   .map figure {
+     padding-bottom: 37.5%;
+   }
+   .mission h2,
+   .contact-section .content-wrapper h2 {
+       width: 95%;
+       font-size: 3em;
+   }
+   .contact-content h4 {
+     font-size: 1.875em;
+   }
 
 /* ==========================================================================
    FAQ Page
@@ -670,7 +684,11 @@ textarea {
     .faq h2 {
         width: 100%;
     }
-
+    .faq h4,
+    .faq p {
+        font-size: 1.125em;
+        line-height: 1;
+    }
   }
 
 
